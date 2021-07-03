@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Rollers</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
+    
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body onload="setup(8)">
+
+    <div id="menu" style = "display:block">
+        <h1 id="welcome_to">Welcome to</h1>
+        <h1 id="title">DICE ROLLERS</h1>
+
+        <div class="levels" id="level_storage">
+        </div>
+        
+        <h2 style="text-align: center; width: 90%; color: white;">There is no tutorial level yet. Push dice to a receptacle. When the die has the same number as the receptacle and it is touching the receptacle, you can push the die into it. Press 'Space Bar' to use your compass. The compass shows you what value the dice will be in the 4 adjacent positions around the current die. Press 'r' to reset the level.</h2>
+        <h2 style="text-align: center; width: 90%; color: white;">My favorite level is level 7... its very challenging though</h2>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3W3Tptv8_uy4Eer4b17k5bSNAkwP8E0ViznBx7taT6ApTPg/viewform"> <button class="level_button google_form"> PLEASE FILL OUT THE GOOGLE FORMS WITH FEEDBACK WHEN YOURE DONE</button> </a>
+
+    </div>
+
+
+    <div id="level" style = "display:none">
+        <h2 style="color: white;">Please remember aspects of the levels, which you liked, which you didnt, which you found challenging, and which you found simple.</h2>
+        
+        <h1 id="level_title"></h1>
+        <canvas id="canvas" style = "opacity: 1;" width="700" height="700"></canvas>
+        <br>  
+        <button onclick="back_to_menu()" class="main_menu_button"> Main Menu </button>
+        
+        
+    </div>
+
+    
+</body>
+<script src="/js/player.js"></script>
+<script src="/js/receptacle.js"></script>
+<script src="/js/dice.js"></script>
+<script src="/js/barrier.js"></script>
+<script src="/js/script.js"></script>
+<script src="/js/gate.js"></script>
+<script src="/js/compass.js"></script>
+<script src="/js/Pusher.js"></script>
+<script src="/js/lodash.js"></script>
+<script src="/js/hints.js"></script>
+
+</html>

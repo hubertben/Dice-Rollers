@@ -1,0 +1,43 @@
+
+{   
+    "level_name": "Blockade",
+    "level_size":5,
+
+    "player": {
+        "x": 2,
+        "y": 2
+    },
+    "dice": [
+        {
+            "x": 3,
+            "y": 3,
+            "order": [5, 4, 6, 3, 1, 2]
+        }
+    ],   
+    "receptacle": [
+        {
+            "x": 1,
+            "y": 1,
+            "face": 3
+        }
+    ],
+    "barrier": [
+        {
+            "x": 1,
+            "y": 3,
+            "face": 4
+        }
+        
+
+    ], 
+    "pusher":[
+
+    ], 
+    "hints":[
+        {
+            "x": 3,
+            "y": 3,
+            "face": 5
+        }
+    ]
+}

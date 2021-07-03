@@ -1,0 +1,51 @@
+
+{   
+    "level_name": "The Beginning",
+    "level_size":5,
+
+    "player": {
+        "x": 1,
+        "y": 1
+    },
+    "dice": [
+        {
+            "x": 2,
+            "y": 2,
+            "order": [5, 4, 6, 3, 1, 2]
+        }
+    ],   
+    "receptacle": [
+        {
+            "x": 3,
+            "y": 3,
+            "face": 4
+        }
+    ],
+    "barrier": [
+        {
+            "x": 0,
+            "y": 4,
+            "face": 4
+        },
+        {
+            "x": 4,
+            "y": 4,
+            "face": 4
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "face": 4
+        }
+    ], 
+    "pusher":[
+
+    ], 
+    "hints":[
+        {
+            "x": 3,
+            "y": 3,
+            "face": 5
+        }
+    ]
+}
