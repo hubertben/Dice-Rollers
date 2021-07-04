@@ -85,7 +85,7 @@ class Player{
                 this.affected.push(g);
                 
                 
-                if(g.OBJECT_TAG == 'Barrier'){  
+                if(g.OBJECT_TAG == 'Barrier' || g.OBJECT_TAG == 'Gate'){  
                     this.allow_movement = false;
                 }
 
