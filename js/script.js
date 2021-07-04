@@ -12,8 +12,6 @@ let width = c.width;
 let height = c.height;
 let ammount_of_boxes = 10;
 let grid = [];
-let p, e, d, d2;
-let rendering_lock = true;
 let dice_count;
 let movement_stack = [];
 let level_number = 0;
@@ -21,7 +19,7 @@ let toggle_compass = false;
 let compass;
 let grid_size = width/ammount_of_boxes;;
 let padding = grid_size/15;
-let dot_radius = grid_size/10;
+let dot_radius = grid_size/15;
 let replay_stack = [];
 let pop_first = true;
 
@@ -103,7 +101,6 @@ function declare_buttons(level_count){
 
 function setup(level){
 
-    rendering_lock = true;
     level_number = level;
 
     fetch("/levels/level_" + level_number + ".json").then(response => {
@@ -131,6 +128,7 @@ function load_level(data){
     grid_size = width/ammount_of_boxes;
 
     grid = [];
+    hints = [];
 
     grid.push(new Player(data.player.x, data.player.y))
 
